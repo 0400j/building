@@ -16,14 +16,33 @@
   </head>
   <div class="main-wrapper">
     <? include $_SERVER["DOCUMENT_ROOT"]."/common/top.php"; ?>
-   <input type="text" id="my_avg_money">원
-   <input type="text" id="my_cnt">개
-   <br>
-   <input type="text" id="price">원에
-   <input type="text" id="cnt">개를 더산다면<br>
-   <div onclick="calc()">계산</div><br>
-   평단 : <input type="text" id="avg_money"> 총 갯수 : <input type="text" id="total_cnt">
-
+    <div class="calc-wrapper">
+         <span>$ AVG STOCK $<br>
+         📈CALCULATOR📉</span>
+      
+      <div class="before-wrapper">
+         <p>📝PLEASE WRITE YOUR CURRENT STOCK PRICE AND NUMBER BELOW.</p>
+         <div class="before">
+            PRICE : <input type="text"  inputmode="decimal" id="my_avg_money"><br>
+            AMOUNT : <input type="text" inputmode="decimal" id="my_cnt">
+         </div>
+      </div>
+      <div class="after-wrapper">
+         <p>📝IF YOU BUY SOME MORE AS BELOW..</p>
+         <div class="after">
+            PRICE : <input type="text" inputmode="decimal" id="price"><br>
+            AMOUNT : <input type="text" inputmode="decimal" id="cnt"><br>
+         </div>
+      </div>
+      <div class="calculation" onclick="calc()">📱CALCULATE</div>
+      <div class="future-wrapper">
+         <p>😁IT WILL BE REFLECTED AS BELOW.</p>
+         <div class="future">
+            AVG PRICE : <input type="text" id="avg_money"><br>
+            TOT AMOUNT : <input type="text" id="total_cnt">
+         </div>
+      </div>
+   </div>
     <? include $_SERVER["DOCUMENT_ROOT"]."/common/footer.php"; ?>
   </div>
 </body>
@@ -35,6 +54,12 @@
       let price = $("#price").val();
       let cnt = $("#cnt").val();
       let now_price = my_avg_money * my_cnt;
+
+      if(my_avg_money=='' || my_cnt=='' || price=='' || cnt==''){
+         alert("PLZ WRITE IN DETAIL!");
+         return false;
+      }
+
       let total_cnt = parseInt(my_cnt) + parseInt(cnt);
       let total = Math.floor(parseInt(now_price + (price*cnt)) / total_cnt);
       $("#avg_money").val(total);

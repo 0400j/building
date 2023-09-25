@@ -42,7 +42,7 @@ $array_code = Array("none"=>"일반", "question"=>"질문", "review"=>"후기");
   $nowUser = pg_fetch_array($result)['name'];
 ?>
 <body>
-  <div class="main-wrapper">
+  <div class="main-wrapper sticky">
     <? include $_SERVER["DOCUMENT_ROOT"]."/common/top.php"; ?>
     <div class="board-view-wrapper">
       <div class="board-view-btn">

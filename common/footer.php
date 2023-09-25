@@ -4,7 +4,7 @@
       <div class="btn-tour" id="tour">tour</div>
    </div>
    <div class="btn-border homepage" onClick="test();">
-      <div class="btn-homepage" id="homepage">test</div>
+      <div class="btn-homepage" id="homepage">???</div>
    </div>
 </div>
 
@@ -12,7 +12,9 @@
    // let linkParam = document.location.href.split("/")[3];
 
    function test(){
-      location.href=("../calc.php");
+      if(confirm("테스트 중인 페이지입니다\n이동하시겠습니까?")){
+         location.href=("../calc.php");
+      }
    }
 
    function modalMateWrapper(){

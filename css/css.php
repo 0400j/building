@@ -80,6 +80,9 @@ p {
   width: -webkit-fill-available;
   bottom: 0;
 }
+.main-wrapper.sticky .footer {
+  position : sticky;
+}
 .btn-border {
   /* border-top: 0.2rem solid lightgray;
    border-left: 0.2rem solid lightgray;
@@ -627,7 +630,8 @@ p {
 /* reply 끝 */
 /* write */
 .main-wrapper .board-view-wrapper .write-contents,
-.main-wrapper .board-view-wrapper .write-title {
+.main-wrapper .board-view-wrapper .write-title,
+.main-wrapper .calc-wrapper input {
   width: 100%;
   background-color : var(--backColor);
   border-bottom: 1px solid var(--yellow);
@@ -638,6 +642,64 @@ p {
   border-right: none;
   color:var(--yellow);
   font-family : var(--font);
+}
+/* write 끝 */
+/* calc 시작 */
+.main-wrapper .calc-wrapper {
+  background: var(--backColor);
+  width: 90%;
+  margin: 3rem auto;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+.main-wrapper .calc-wrapper input {
+  width : 40%;
+  font-size : 1rem;
+}
+.main-wrapper .calc-wrapper span {
+  display : block;
+  font-size: 2rem;
+  -webkit-text-stroke-color: #aa4169;
+  -webkit-text-stroke-width: 1px;
+  color: var(--yellow);
+  text-align: center;
+  padding: 1rem 0;
+}
+.main-wrapper .calc-wrapper p {
+  font-size: 0.9rem;
+  text-align: center;
+  color: mediumspringgreen;
+}
+.main-wrapper .calc-wrapper .future-wrapper .future,
+.main-wrapper .calc-wrapper .after-wrapper .after,
+.main-wrapper .calc-wrapper .before-wrapper .before {
+  padding : 0 2rem;
+  font-size : 1rem;
+  -webkit-text-stroke-color: #aa4169;
+  -webkit-text-stroke-width: 1px;
+  color: var(--yellow);
+}
+.main-wrapper .calc-wrapper .after-wrapper,
+.main-wrapper .calc-wrapper .before-wrapper {
+  margin-bottom : 2rem;
+}
+.main-wrapper .calc-wrapper .calculation {
+  width: 80%;
+  background: #ff00c6;
+  color: var(--yellow);
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+.main-wrapper .calc-wrapper .calculation:active {
+  background : var(--yellow);
+  color : #ff00c6;
 }
 @keyframes ticktoc {
   49.9% {
@@ -695,6 +757,14 @@ p {
   }
   100% {
     top: 70%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-wrapper .calc-wrapper {
+    margin : 0 auto;
+  }
+  .main-wrapper .calc-wrapper span {
+    font-size : 1.3rem;
   }
 }
 @media screen and (max-width: 400px) {

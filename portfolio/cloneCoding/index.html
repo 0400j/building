@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <script type="text/javascript"></script>
+  <body>
+    <div class="sticky-menu" id="sticky-menu">
+      <!-- 메뉴바 -->
+      <div class="menu-section">
+        <div class="logo">
+          <img src="./img/logo.png" />
+        </div>
+        <div class="menu-list">
+          <ul>
+            <li>
+              <span>Home</span>
+              <img src="./img/bottom-arrow-b.png" />
+            </li>
+            <li>
+              <span>Explore</span>
+              <img src="./img/bottom-arrow-b.png" />
+            </li>
+            <li>
+              <span>Pages</span>
+              <img src="./img/bottom-arrow-b.png" />
+            </li>
+            <li>
+              <span>Blog</span>
+              <img src="./img/bottom-arrow-b.png" />
+            </li>
+            <li>
+              <span>Account</span>
+              <img src="./img/bottom-arrow-b.png" />
+            </li>
+          </ul>
+        </div>
+        <div class="etc">
+          <div>🔍</div>
+          <div>🔔</div>
+          <div class="sign-up">Sign up</div>
+          <div>🙍‍♂️</div>
+          <div id="mode" onClick="modeChange(this)" value="light">🌙</div>
+          <div class="burger" onClick="toggleClass('burger-menu')">☰</div>
+        </div>
+      </div>
+      <div class="burger-menu-section none" id="burger-menu">
+        <ul>
+          <li onclick="openSubMenu('home');">Home<span>∨</span></li>
+          <ul id="home">
+            <li>home option1</li>
+            <li>home option2</li>
+            <li>home option3</li>
+            <li>home option4</li>
+            <li>home option5</li>
+            <li>home option6</li>
+          </ul>
+          <li onclick="openSubMenu('explore');">Explore<span>∨</span></li>
+          <ul id="explore">
+            <li>Explore</li>
+            <li>Explore Option2</li>
+            <li>Explore Option3</li>
+            <li>Explore Option4</li>
+            <li>Item Detail</li>
+            <li>Item Detail2</li>
+          </ul>
+          <li onclick="openSubMenu('pages');">Pages<span>∨</span></li>
+          <ul id="pages">
+            <li>About</li>
+            <li>Contact</li>
+            <li>How-it Works</li>
+            <li>How it Works Detail</li>
+            <li>Jobs</li>
+            <li>Job Detail</li>
+            <li>Support</li>
+            <li>Support Topic</li>
+            <li>Policy</li>
+            <li>Terms</li>
+          </ul>
+          <li onclick="openSubMenu('blog');">Blog<span>∨</span></li>
+          <ul id="blog">
+            <li>Blog</li>
+            <li>Blog Option</li>
+          </ul>
+          <li onclick="openSubMenu('account');">Account<span>∨</span></li>
+          <ul id="account">
+            <li>Profile</li>
+            <li>Edit Profile</li>
+            <li>Connect Wallet</li>
+            <li>Choose Blockchain</li>
+            <li>Add New Item</li>
+            <li>Login</li>
+            <li>Sign Up</li>
+            <li>Forget Password</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+    <div class="block-red"></div>
+    <div class="block-blue"></div>
+
+    <div class="contents-wrapper" id="contents-wrapper">
+      <div class="top-section">
+        <div class="top-left-wrapper">
+          <div class="top-left-title">
+            Create, Buy,<br />
+            Sell, Swap and Farm NFTs
+          </div>
+          <div class="top-left-text">
+            Grow your NFT brand with zero technical expertise, creator &
+            enterprise friendly features, complete customisation, and tons of
+            integrations.
+          </div>
+          <div class="top-left-btn-wrapper">
+            <div class="btn-buy">Buy Now</div>
+            <div class="btn-learn">Learn More</div>
+          </div>
+        </div>
+        <div class="top-right-wrapper">
+          <img src="./img/pic1.png" />
+        </div>
+      </div>
+
+      <div class="content-section">
+        <!-- 핫컬렉션 -->
+        <div class="hot-collections-section">
+          <div class="title-wrapper">
+            <div class="content-title">COLLECTIONS</div>
+            <div class="content-sub-title">Hot <span>Collections</span></div>
+          </div>
+          <!-- 팀멤버 -->
+          <div class="member-section">
+            <div class="member-list-wrapper">
+              <div class="member-list">
+                <div class="member-photo">
+                  <img src="./img/avatar-1.jpg" />
+                </div>
+                <div class="member-info">
+                  <div class="member-circle">01</div>
+                  <h6>NANCY HOLLAND</h6>
+                  <h5>ERP-73</h5>
+                </div>
+              </div>
+              <div class="member-list">
+                <div class="member-photo">
+                  <img src="./img/avatar-2.jpg" />
+                </div>
+                <div class="member-info">
+                  <div class="member-circle">01</div>
+                  <h6>NANCY HOLLAND</h6>
+                  <h5>ERP-73</h5>
+                </div>
+              </div>
+              <div class="member-list">
+                <div class="member-photo">
+                  <img src="./img/avatar-3.jpg" />
+                </div>
+                <div class="member-info">
+                  <div class="member-circle">01</div>
+                  <h6>NANCY HOLLAND</h6>
+                  <h5>ERP-73</h5>
+                </div>
+              </div>
+              <div class="member-list">
+                <div class="member-photo">
+                  <img src="./img/avatar-4.jpg" />
+                </div>
+                <div class="member-info">
+                  <div class="member-circle">01</div>
+                  <h6>NANCY HOLLAND</h6>
+                  <h5>ERP-73</h5>
+                </div>
+              </div>
+              <div class="member-list">
+                <div class="member-circle">01</div>
+                <div class="member-photo">
+                  <img src="./img/avatar-5.jpg" />
+                </div>
+                <div class="member-info">
+                  <h6>NANCY HOLLAND</h6>
+                  <h5>ERP-73</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 핫프로덕츠 -->
+        <div class="hot-products-section">
+          <div class="title-wrapper">
+            <div class="content-title">COLLECTIONS</div>
+            <div class="content-sub-title">Hot <span>Products</span></div>
+          </div>
+          <div class="products-section">
+            <div class="products-list">
+              <div class="products-people">
+                <div class="products-people-list">
+                  <img src="./img/avatar-1.jpg" />
+                  <img src="./img/avatar-2.jpg" />
+                  <img src="./img/avatar-3.jpg" />
+                  <span class="more-people">+5</span>
+                </div>
+                <div class="products-more">⁝</div>
+              </div>
+              <div class="products-photo">
+                <img src="./img/product-1.jpg" />
+                <div class="time-wrapper">
+                  <div class="time-list">
+                    <div class="time-day">00</div>
+                    <div class="time-day-text">Day</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Hour">00</div>
+                    <div class="time-Hour-text">Hour</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Minute">00</div>
+                    <div class="time-Minute-text">Minute</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Second">00</div>
+                    <div class="time-Second-text">Second</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-info">
+                <div class="products-name-wrapper">
+                  <div class="products-name">Space Shapes #3</div>
+                  <div class="products-bid">Highest bid 5/11</div>
+                </div>
+                <div class="products-price-wrapper">
+                  <span>3.99 ETH</span> 1/1
+                </div>
+                <div class="products-btn-wrapper">
+                  <div class="btn-buy">Buy Now</div>
+                  <div class="btn-like">🤍 811</div>
+                </div>
+              </div>
+            </div>
+            <div class="products-list">
+              <div class="products-people">
+                <div class="products-people-list">
+                  <img src="./img/avatar-1.jpg" />
+                  <img src="./img/avatar-2.jpg" />
+                  <img src="./img/avatar-3.jpg" />
+                  <span class="more-people">+5</span>
+                </div>
+                <div class="products-more">⁝</div>
+              </div>
+              <div class="products-photo">
+                <img src="./img/product-2.jpg" />
+                <div class="time-wrapper">
+                  <div class="time-list">
+                    <div class="time-day">00</div>
+                    <div class="time-day-text">Day</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Hour">00</div>
+                    <div class="time-Hour-text">Hour</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Minute">00</div>
+                    <div class="time-Minute-text">Minute</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Second">00</div>
+                    <div class="time-Second-text">Second</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-info">
+                <div class="products-name-wrapper">
+                  <div class="products-name">Space Shapes #3</div>
+                  <div class="products-bid">Highest bid 5/11</div>
+                </div>
+                <div class="products-price-wrapper">
+                  <span>3.99 ETH</span> 1/1
+                </div>
+                <div class="products-btn-wrapper">
+                  <div class="btn-buy">Buy Now</div>
+                  <div class="btn-like">🤍 811</div>
+                </div>
+              </div>
+            </div>
+            <div class="products-list">
+              <div class="products-people">
+                <div class="products-people-list">
+                  <img src="./img/avatar-1.jpg" />
+                  <img src="./img/avatar-2.jpg" />
+                  <img src="./img/avatar-3.jpg" />
+                  <span class="more-people">+5</span>
+                </div>
+                <div class="products-more">⁝</div>
+              </div>
+              <div class="products-photo">
+                <img src="./img/product-3.jpg" />
+                <div class="time-wrapper">
+                  <div class="time-list">
+                    <div class="time-day">00</div>
+                    <div class="time-day-text">Day</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Hour">00</div>
+                    <div class="time-Hour-text">Hour</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Minute">00</div>
+                    <div class="time-Minute-text">Minute</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Second">00</div>
+                    <div class="time-Second-text">Second</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-info">
+                <div class="products-name-wrapper">
+                  <div class="products-name">Space Shapes #3</div>
+                  <div class="products-bid">Highest bid 5/11</div>
+                </div>
+                <div class="products-price-wrapper">
+                  <span>3.99 ETH</span> 1/1
+                </div>
+                <div class="products-btn-wrapper">
+                  <div class="btn-buy">Buy Now</div>
+                  <div class="btn-like">🤍 811</div>
+                </div>
+              </div>
+            </div>
+            <div class="products-list">
+              <div class="products-people">
+                <div class="products-people-list">
+                  <img src="./img/avatar-1.jpg" />
+                  <img src="./img/avatar-2.jpg" />
+                  <img src="./img/avatar-3.jpg" />
+                  <span class="more-people">+5</span>
+                </div>
+                <div class="products-more">⁝</div>
+              </div>
+              <div class="products-photo">
+                <img src="./img/product-4.jpg" />
+                <div class="time-wrapper">
+                  <div class="time-list">
+                    <div class="time-day">00</div>
+                    <div class="time-day-text">Day</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Hour">00</div>
+                    <div class="time-Hour-text">Hour</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Minute">00</div>
+                    <div class="time-Minute-text">Minute</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Second">00</div>
+                    <div class="time-Second-text">Second</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-info">
+                <div class="products-name-wrapper">
+                  <div class="products-name">Space Shapes #3</div>
+                  <div class="products-bid">Highest bid 5/11</div>
+                </div>
+                <div class="products-price-wrapper">
+                  <span>3.99 ETH</span> 1/1
+                </div>
+                <div class="products-btn-wrapper">
+                  <div class="btn-buy">Buy Now</div>
+                  <div class="btn-like">🤍 811</div>
+                </div>
+              </div>
+            </div>
+            <div class="products-list">
+              <div class="products-people">
+                <div class="products-people-list">
+                  <img src="./img/avatar-1.jpg" />
+                  <img src="./img/avatar-2.jpg" />
+                  <img src="./img/avatar-3.jpg" />
+                  <span class="more-people">+5</span>
+                </div>
+                <div class="products-more">⁝</div>
+              </div>
+              <div class="products-photo">
+                <img src="./img/product-6.jpg" />
+                <div class="time-wrapper">
+                  <div class="time-list">
+                    <div class="time-day">00</div>
+                    <div class="time-day-text">Day</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Hour">00</div>
+                    <div class="time-Hour-text">Hour</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Minute">00</div>
+                    <div class="time-Minute-text">Minute</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Second">00</div>
+                    <div class="time-Second-text">Second</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-info">
+                <div class="products-name-wrapper">
+                  <div class="products-name">Space Shapes #3</div>
+                  <div class="products-bid">Highest bid 5/11</div>
+                </div>
+                <div class="products-price-wrapper">
+                  <span>3.99 ETH</span> 1/1
+                </div>
+                <div class="products-btn-wrapper">
+                  <div class="btn-buy">Buy Now</div>
+                  <div class="btn-like">🤍 811</div>
+                </div>
+              </div>
+            </div>
+            <div class="products-list">
+              <div class="products-people">
+                <div class="products-people-list">
+                  <img src="./img/avatar-1.jpg" />
+                  <img src="./img/avatar-2.jpg" />
+                  <img src="./img/avatar-3.jpg" />
+                  <span class="more-people">+5</span>
+                </div>
+                <div class="products-more">⁝</div>
+              </div>
+              <div class="products-photo">
+                <img src="./img/product-5.jpg" />
+                <div class="time-wrapper">
+                  <div class="time-list">
+                    <div class="time-day">00</div>
+                    <div class="time-day-text">Day</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Hour">00</div>
+                    <div class="time-Hour-text">Hour</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Minute">00</div>
+                    <div class="time-Minute-text">Minute</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Second">00</div>
+                    <div class="time-Second-text">Second</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-info">
+                <div class="products-name-wrapper">
+                  <div class="products-name">Space Shapes #3</div>
+                  <div class="products-bid">Highest bid 5/11</div>
+                </div>
+                <div class="products-price-wrapper">
+                  <span>3.99 ETH</span> 1/1
+                </div>
+                <div class="products-btn-wrapper">
+                  <div class="btn-buy">Buy Now</div>
+                  <div class="btn-like">🤍 811</div>
+                </div>
+              </div>
+            </div>
+            <div class="products-list">
+              <div class="products-people">
+                <div class="products-people-list">
+                  <img src="./img/avatar-1.jpg" />
+                  <img src="./img/avatar-2.jpg" />
+                  <img src="./img/avatar-3.jpg" />
+                  <span class="more-people">+5</span>
+                </div>
+                <div class="products-more">⁝</div>
+              </div>
+              <div class="products-photo">
+                <img src="./img/product-7.jpg" />
+                <div class="time-wrapper">
+                  <div class="time-list">
+                    <div class="time-day">00</div>
+                    <div class="time-day-text">Day</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Hour">00</div>
+                    <div class="time-Hour-text">Hour</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Minute">00</div>
+                    <div class="time-Minute-text">Minute</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Second">00</div>
+                    <div class="time-Second-text">Second</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-info">
+                <div class="products-name-wrapper">
+                  <div class="products-name">Space Shapes #3</div>
+                  <div class="products-bid">Highest bid 5/11</div>
+                </div>
+                <div class="products-price-wrapper">
+                  <span>3.99 ETH</span> 1/1
+                </div>
+                <div class="products-btn-wrapper">
+                  <div class="btn-buy">Buy Now</div>
+                  <div class="btn-like">🤍 811</div>
+                </div>
+              </div>
+            </div>
+            <div class="products-list">
+              <div class="products-people">
+                <div class="products-people-list">
+                  <img src="./img/avatar-1.jpg" />
+                  <img src="./img/avatar-2.jpg" />
+                  <img src="./img/avatar-3.jpg" />
+                  <span class="more-people">+5</span>
+                </div>
+                <div class="products-more">⁝</div>
+              </div>
+              <div class="products-photo">
+                <img src="./img/product-8.jpg" />
+                <div class="time-wrapper">
+                  <div class="time-list">
+                    <div class="time-day">00</div>
+                    <div class="time-day-text">Day</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Hour">00</div>
+                    <div class="time-Hour-text">Hour</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Minute">00</div>
+                    <div class="time-Minute-text">Minute</div>
+                  </div>
+                  <div class="time-list">
+                    <div class="time-Second">00</div>
+                    <div class="time-Second-text">Second</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-info">
+                <div class="products-name-wrapper">
+                  <div class="products-name">Space Shapes #3</div>
+                  <div class="products-bid">Highest bid 5/11</div>
+                </div>
+                <div class="products-price-wrapper">
+                  <span>3.99 ETH</span> 1/1
+                </div>
+                <div class="products-btn-wrapper">
+                  <div class="btn-buy">Buy Now</div>
+                  <div class="btn-like">🤍 811</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="seller-section">
+          <div class="title-wrapper">
+            <div class="content-title">SELLERS</div>
+            <div class="content-sub-title">Top <span>Sellers</span></div>
+          </div>
+          <div class="seller-wrapper">
+            <div class="seller-list-wrapper">
+              <div class="seller-list">
+                <div class="seller-photo">
+                  <img src="./img/avatar-5.jpg" />
+                </div>
+                <div class="seller-info">
+                  <div class="seller-name-wrapper">
+                    <div class="seller-name">Grayle Hicks</div>
+                    <div class="seller-rank">01</div>
+                  </div>
+                  <div class="seller-bid">3.2ETH</div>
+                </div>
+              </div>
+              <div class="seller-list">
+                <div class="seller-photo">
+                  <img src="./img/avatar-6.jpg" />
+                </div>
+                <div class="seller-info">
+                  <div class="seller-name-wrapper">
+                    <div class="seller-name">Grayle Hicks</div>
+                    <div class="seller-rank">01</div>
+                  </div>
+                  <div class="seller-bid">3.2ETH</div>
+                </div>
+              </div>
+              <div class="seller-list">
+                <div class="seller-photo">
+                  <img src="./img/avatar-1.jpg" />
+                </div>
+                <div class="seller-info">
+                  <div class="seller-name-wrapper">
+                    <div class="seller-name">Grayle Hicks</div>
+                    <div class="seller-rank">01</div>
+                  </div>
+                  <div class="seller-bid">3.2ETH</div>
+                </div>
+              </div>
+              <div class="seller-list">
+                <div class="seller-photo">
+                  <img src="./img/avatar-2.jpg" />
+                </div>
+                <div class="seller-info">
+                  <div class="seller-name-wrapper">
+                    <div class="seller-name">Grayle Hicks</div>
+                    <div class="seller-rank">01</div>
+                  </div>
+                  <div class="seller-bid">3.2ETH</div>
+                </div>
+              </div>
+              <div class="seller-list">
+                <div class="seller-photo">
+                  <img src="./img/avatar-1.jpg" />
+                </div>
+                <div class="seller-info">
+                  <div class="seller-name-wrapper">
+                    <div class="seller-name">Grayle Hicks</div>
+                    <div class="seller-rank">01</div>
+                  </div>
+                  <div class="seller-bid">3.2ETH</div>
+                </div>
+              </div>
+              <div class="seller-list">
+                <div class="seller-photo">
+                  <img src="./img/avatar-2.jpg" />
+                </div>
+                <div class="seller-info">
+                  <div class="seller-name-wrapper">
+                    <div class="seller-name">Grayle Hicks</div>
+                    <div class="seller-rank">01</div>
+                  </div>
+                  <div class="seller-bid">3.2ETH</div>
+                </div>
+              </div>
+              <div class="seller-list">
+                <div class="seller-photo">
+                  <img src="./img/avatar-3.jpg" />
+                </div>
+                <div class="seller-info">
+                  <div class="seller-name-wrapper">
+                    <div class="seller-name">Grayle Hicks</div>
+                    <div class="seller-rank">01</div>
+                  </div>
+                  <div class="seller-bid">3.2ETH</div>
+                </div>
+              </div>
+              <div class="seller-list">
+                <div class="seller-photo">
+                  <img src="./img/avatar-4.jpg" />
+                </div>
+                <div class="seller-info">
+                  <div class="seller-name-wrapper">
+                    <div class="seller-name">Grayle Hicks</div>
+                    <div class="seller-rank">01</div>
+                  </div>
+                  <div class="seller-bid">3.2ETH</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 라이브옥션 -->
+        <div class="hot-products-section live-auction">
+          <div class="title-wrapper">
+            <div class="content-title">COLLECTIONS</div>
+            <div class="content-sub-title">Live <span>Auctions</span></div>
+          </div>
+          <div class="products-section auction-section">
+            <div class="products-list auction-list">
+              <div class="products-people">
+                <div class="products-people-list">
+                  <img src="./img/avatar-1.jpg" />
+                  <img src="./img/avatar-2.jpg" />
+                  <img src="./img/avatar-3.jpg" />
+                  <span class="more-people">+5</span>
+                </div>
+                <div class="products-more">⁝</div>
+              </div>
+              <div class="products-photo">
+                <img src="./img/product-1.jpg" />
+              </div>
+              <div class="products-info">
+                <div class="products-name-wrapper">
+                  <div class="products-name">Space Shapes #3</div>
+                  <div class="products-bid">Highest bid 5/11</div>
+                </div>
+                <div class="products-price-wrapper">
+                  <span>3.99 ETH</span> 1/1
+                </div>
+                <div class="products-btn-wrapper">
+                  <div class="btn-buy">Buy Now</div>
+                  <div class="btn-like">🤍 811</div>
+                </div>
+              </div>
+            </div>
+            <div class="products-list auction-list">
+              <div class="products-people">
+                <div class="products-people-list">
+                  <img src="./img/avatar-1.jpg" />
+                  <img src="./img/avatar-2.jpg" />
+                  <img src="./img/avatar-3.jpg" />
+                  <span class="more-people">+5</span>
+                </div>
+                <div class="products-more">⁝</div>
+              </div>
+              <div class="products-photo">
+                <img src="./img/product-2.jpg" />
+              </div>
+              <div class="products-info">
+                <div class="products-name-wrapper">
+                  <div class="products-name">Space Shapes #3</div>
+                  <div class="products-bid">Highest bid 5/11</div>
+                </div>
+                <div class="products-price-wrapper">
+                  <span>3.99 ETH</span> 1/1
+                </div>
+                <div class="products-btn-wrapper">
+                  <div class="btn-buy">Buy Now</div>
+                  <div class="btn-like">🤍 811</div>
+                </div>
+              </div>
+            </div>
+            <div class="products-list auction-list">
+              <div class="products-people">
+                <div class="products-people-list">
+                  <img src="./img/avatar-1.jpg" />
+                  <img src="./img/avatar-2.jpg" />
+                  <img src="./img/avatar-3.jpg" />
+                  <span class="more-people">+5</span>
+                </div>
+                <div class="products-more">⁝</div>
+              </div>
+              <div class="products-photo">
+                <img src="./img/product-3.jpg" />
+              </div>
+              <div class="products-info">
+                <div class="products-name-wrapper">
+                  <div class="products-name">Space Shapes #3</div>
+                  <div class="products-bid">Highest bid 5/11</div>
+                </div>
+                <div class="products-price-wrapper">
+                  <span>3.99 ETH</span> 1/1
+                </div>
+                <div class="products-btn-wrapper">
+                  <div class="btn-buy">Buy Now</div>
+                  <div class="btn-like">🤍 811</div>
+                </div>
+              </div>
+            </div>
+            <div class="products-list auction-list">
+              <div class="products-people">
+                <div class="products-people-list">
+                  <img src="./img/avatar-1.jpg" />
+                  <img src="./img/avatar-2.jpg" />
+                  <img src="./img/avatar-3.jpg" />
+                  <span class="more-people">+5</span>
+                </div>
+                <div class="products-more">⁝</div>
+              </div>
+              <div class="products-photo">
+                <img src="./img/product-4.jpg" />
+              </div>
+              <div class="products-info">
+                <div class="products-name-wrapper">
+                  <div class="products-name">Space Shapes #3</div>
+                  <div class="products-bid">Highest bid 5/11</div>
+                </div>
+                <div class="products-price-wrapper">
+                  <span>3.99 ETH</span> 1/1
+                </div>
+                <div class="products-btn-wrapper">
+                  <div class="btn-buy">Buy Now</div>
+                  <div class="btn-like">🤍 811</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lower-collection-section">
+          <div class="title-wrapper">
+            <div class="content-title">COLLECTIONS</div>
+            <div class="content-sub-title">Hot <span>Collections</span></div>
+          </div>
+          <div class="collection-wrapper">
+            <div class="collection-list">
+              <div class="collection-nft">
+                <img src="./img/product-5.jpg" />
+                <div class="artist">
+                  <img src="./img/avatar-3.jpg" />
+                </div>
+              </div>
+              <div class="collection-info">
+                <div class="collection-name-wrapper">
+                  <div class="collection-name">Grayle Hicks</div>
+                </div>
+                <div class="collection-bid">3.2ETH</div>
+              </div>
+            </div>
+            <div class="collection-list">
+              <div class="collection-nft">
+                <img src="./img/product-6.jpg" />
+                <div class="artist">
+                  <img src="./img/avatar-4.jpg" />
+                </div>
+              </div>
+              <div class="collection-info">
+                <div class="collection-name-wrapper">
+                  <div class="collection-name">Grayle Hicks</div>
+                </div>
+                <div class="collection-bid">3.2ETH</div>
+              </div>
+            </div>
+            <div class="collection-list">
+              <div class="collection-nft">
+                <img src="./img/product-7.jpg" />
+                <div class="artist">
+                  <img src="./img/avatar-5.jpg" />
+                </div>
+              </div>
+              <div class="collection-info">
+                <div class="collection-name-wrapper">
+                  <div class="collection-name">Grayle Hicks</div>
+                </div>
+                <div class="collection-bid">3.2ETH</div>
+              </div>
+            </div>
+            <div class="collection-list">
+              <div class="collection-nft">
+                <img src="./img/product-8.jpg" />
+                <div class="artist">
+                  <img src="./img/avatar-6.jpg" />
+                </div>
+              </div>
+              <div class="collection-info">
+                <div class="collection-name-wrapper">
+                  <div class="collection-name">Grayle Hicks</div>
+                </div>
+                <div class="collection-bid">3.2ETH</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="promote-section">
+          <div class="title-wrapper">
+            <div class="content-title">WHY WE ARE?</div>
+            <div class="content-sub-title">Create & <span>Sell NFTs</span></div>
+          </div>
+          <div class="promote-list-wrapper">
+            <div class="promote-list">
+              <div class="promote-photo">
+                <img
+                  src="https://cdn.banggooso.com/assets/images/icons/btn-share-facebook.png"
+                />
+              </div>
+              <div class="promote-contents">
+                <div class="promote-title">Set up your waller</div>
+                <div class="promote-subtitle">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                  hic cum provident assumenda. Quos quia excepturi, repellat qui
+                </div>
+              </div>
+            </div>
+            <div class="promote-list">
+              <div class="promote-photo">
+                <img
+                  src="https://cdn.banggooso.com/assets/images/icons/btn-share-kakao.png"
+                />
+              </div>
+              <div class="promote-contents">
+                <div class="promote-title">Set up your waller</div>
+                <div class="promote-subtitle">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                  hic cum provident assumenda. Quos quia excepturi, repellat qui
+                </div>
+              </div>
+            </div>
+            <div class="promote-list">
+              <div class="promote-photo">
+                <img
+                  src="https://cdn.banggooso.com/assets/images/icons/btn-share-insta.png"
+                />
+              </div>
+              <div class="promote-contents">
+                <div class="promote-title">Set up your waller</div>
+                <div class="promote-subtitle">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                  hic cum provident assumenda. Quos quia excepturi, repellat qui
+                </div>
+              </div>
+            </div>
+            <div class="promote-list">
+              <div class="promote-photo">
+                <img
+                  src="https://cdn.banggooso.com/assets/images/icons/btn-share-twitter.png"
+                />
+              </div>
+              <div class="promote-contents">
+                <div class="promote-title">Set up your waller</div>
+                <div class="promote-subtitle">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                  hic cum provident assumenda. Quos quia excepturi, repellat qui
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 하단 -->
+      <div class="footer-section">
+        <div class="footer">
+          <div class="company-intro">
+            <div class="logo">
+              <img src="./img/logo.png" />
+            </div>
+            <div class="company-intro-text">
+              Crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and
+              discover exclusive digital items.
+            </div>
+          </div>
+          <div class="information-section">
+            <div class="marketplace-wrapper">
+              <div>MARKETPLACE</div>
+
+              <div class="marketplace">
+                <ul>
+                  <li>All NFTs</li>
+                  <li>New</li>
+                  <li>Collectibles</li>
+                  <li>Photography</li>
+                  <li>Trading Cards</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="resources-wrapper">
+              <div>RESOURCES</div>
+
+              <div class="resources">
+                <ul>
+                  <li>Help Center</li>
+                  <li>Platform Status</li>
+                  <li>About Us</li>
+                  <li>Copyright</li>
+                  <li>Popular Campaign</li>
+                </ul>
+              </div>
+            </div>
+            <div class="message-wrapper">
+              <div>STAY UP TO DATE</div>
+              <div class="message">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestiae sit ad quam, nobis nam facere et?
+                <div class="send">
+                  <input class="text" placeholder="Enter Your username" />
+                  <button class="submit" type="button">💌</button>
+                </div>
+                New UI kits or big discounts. Never spam.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-section">
+        <div class="bottom">
+          <div class="about">
+            <span>Privace & Policy</span>
+            <span>Faq's</span>
+            <span>Get a Quote</span>
+          </div>
+          <div class="copyright">
+            © 2021 Maioni is Proudly Powered by pxdraft
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function modeChange(e) {
+    if (e.innerHTML == "🌙") {
+      e.innerHTML = "🌞";
+      document.getElementById("sticky-menu").classList.add("night");
+      document.getElementById("contents-wrapper").classList.add("night");
+    } else {
+      e.innerHTML = "🌙";
+      document.getElementById("sticky-menu").classList.remove("night");
+      document.getElementById("contents-wrapper").classList.remove("night");
+    }
+  }
+
+  function toggleClass(id) {
+    document.getElementById(id).classList.toggle("none");
+  }
+  function openSubMenu(e) {
+    let open_ul = document.getElementById(e).classList.toggle("none-off");
+  }
+</script>

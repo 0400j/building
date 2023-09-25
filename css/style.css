@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "bitgo";
+  src: url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff"),
+    url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2");
+  unicode-range: U+AC00-D7A3;
+}
+@font-face {
+  font-family: "bitgo";
+  src: url("./fonts/AGoblinAppears-o2aV.ttf");
+}
